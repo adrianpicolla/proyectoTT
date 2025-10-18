@@ -11,3 +11,8 @@ git push -u origin main
 ***INSTALAR REACT***
 npm install react-router-dom
 npm install react-bootstrap bootstrap
+
+***INSTALAR FONTAWESOME***
+npm i --save @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
+# If you also need brand or regular icons:
+npm i --save @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons

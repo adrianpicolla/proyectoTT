@@ -1,29 +1,28 @@
 import {Link} from "react-router-dom";
 import {Container,Navbar,Nav} from "react-bootstrap";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+
 export default function Header(){
     return(
         <Navbar bg="dark" variant="dark" text-white expand="lg">
-
             <Container>
-                
                 <Navbar.Brand as={Link} to="/">
-                    <div>
-                        <h3 text-center >MATERIALES DE CONSTRUCCION</h3>
-                    </div>
-                    
-                    <img src="src/objetos/logo.jpg" alt="logo"  class="img-fluid" />
+                    <img src="https://placehold.co/60x40/orange/cyan" 
+                    alt="logo placeholder" 
+                    className="d-inline-block align-top me-2"/>
                 </Navbar.Brand>
 
-                <Nav className="ms-auto">
+                <Nav className="ms-auto align-items-lefts">
                     <Nav.Link as={Link} to="/">
                         Home
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/clientes">
-                        Clientes
+                    <Nav.Link as={Link} to="/materiales">
+                        Materiales
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/productos">
-                        Productos
+                    <Nav.Link as={Link} to="/ofertas">
+                        Ofertas
                     </Nav.Link>
                     <Nav.Link as={Link} to="/servicios">
                         Servicios
@@ -31,6 +30,14 @@ export default function Header(){
                     <Nav.Link as={Link} to="/contacto">
                         Contacto
                     </Nav.Link>
+                    <div className="d-flex align-items-center" >
+                        <button variant="outline-light" as={Link} to="administracion" className="me-2 ml-4 btn btn-primary"> 
+                            Admin
+                        </button>
+                        <Link to="/carrito" className="text-white ">
+                            <FontAwesomeIcon icon={faShoppingCart} size="lg"/>
+                        </Link>
+                    </div>
                </Nav>
             </Container>
         </Navbar>
