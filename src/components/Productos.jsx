@@ -1,13 +1,13 @@
 import React from 'react';
 import ProductList from './ProductList';
 
-const Ofertas = () => {
+const Productos = () => {
   return (
     <div className="container">
-      <h1>Ofertas</h1>
-      <ProductList category="jewelery" />
+      <h1>Todos los productos</h1>
+      <ProductList />
     </div>
   );
 };
 
-export default Ofertas;
+export default Productos;

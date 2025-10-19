@@ -5,7 +5,7 @@ git push -u origin main
 
 ***ACTUALIZAR EL REPOSITORIO***
 git add .
-git commit -m "v01"
+git commit -m "v05"
 git push -u origin main
 
 ***INSTALAR REACT***

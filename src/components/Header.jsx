@@ -31,7 +31,7 @@ export default function Header(){
                         Contacto
                     </Nav.Link>
                     <div className="d-flex align-items-center" >
-                        <button variant="outline-light" as={Link} to="administracion" className="me-2 ml-4 btn btn-primary"> 
+                        <button variant="outline-light" as={Link} to="/login" className="me-2 ml-4 btn btn-primary"> 
                             Admin
                         </button>
                         <Link to="/carrito" className="text-white ">
