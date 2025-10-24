@@ -33,13 +33,13 @@ export default function Materiales()
 
 
 import React from 'react';
-import ProductListMat from './ProductListMat';
+import ProductList from './ProductList';
 
 const Materiales = () => {
   return (
     <div className="container">
       <h1>Todos los Materiales</h1>
-      <ProductListMat />
+      <ProductList />
     </div>
   );
 };

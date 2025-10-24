@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import ProductCard from './ProductCard';
 
-const ProductList = ({ category = null }) => 
+const ProductListMat = ({ category = null }) => 
     {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -43,7 +43,7 @@ const ProductList = ({ category = null }) =>
   return (
     <Row>
       {products.map((product) => (
-        <Col md={3} key={product.id} className="mb-4">
+        <Col md={4} key={product.id} className="mb-4">
           <ProductCard product={product} agregarAlCarrito={handleAgregarAlCarrito} />
         </Col>
       ))}
@@ -51,4 +51,4 @@ const ProductList = ({ category = null }) =>
   );
 };
 
-export default ProductList;
+export default ProductListMat;
